@@ -8,13 +8,13 @@ public class games {
 
     public static void SuperSmashBrosUltimate() {
         DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
-        String IdApp= "849915439844687893";
+        String IdApp= "853648719868854273";
         String IdSteam = "";
         DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
         DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
         DiscordRichPresence status = new DiscordRichPresence();
         status.startTimestamp = System.currentTimeMillis() / 1000;
-        status.largeImageKey = "tyrolium_servermc_v2_discord";
+        status.largeImageKey = "supersmashbrosultimate";
         status.largeImageText = "Super Smash Bros. Ultimate";
         status.details = "";
         status.state = " Joue depuis : ";
