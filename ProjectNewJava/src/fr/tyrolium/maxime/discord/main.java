@@ -19,6 +19,7 @@ public class main extends JFrame {
 
     public main(){
         this.setTitle("DiscordRishSwitch");
+        this.setIconImage(Swinger.getResource("icone.png"));
         this.setSize(975, 625);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
