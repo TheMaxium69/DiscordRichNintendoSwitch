@@ -13,7 +13,7 @@ public class panel extends JPanel implements SwingerEventListener {
     private Image background = Swinger.getResource("background.png");
     private STexturedButton quitBtn = new STexturedButton(Swinger.getResource("quit.png"));
     private STexturedButton hideBtn = new STexturedButton(Swinger.getResource("hide.png"));
-    private STexturedButton test = new STexturedButton(Swinger.getResource("games/SuperSmashBrosUltimate.png"));
+    private STexturedButton test = new STexturedButton(Swinger.getResource("SuperSmashBrosUltimate.png"));
 
     public panel() {
         this.setLayout(null);
