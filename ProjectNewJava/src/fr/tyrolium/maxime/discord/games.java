@@ -1,12 +1,8 @@
 package fr.tyrolium.maxime.discord;
 
 import club.minnced.discord.rpc.*;
-import fr.theshark34.swinger.Swinger;
-import fr.theshark34.swinger.event.SwingerEvent;
-import fr.theshark34.swinger.textured.STexturedButton;
 
 public class games {
-
 
     public static void SuperSmashBrosUltimate(String arg1) {
         DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
@@ -74,7 +70,6 @@ public class games {
         status.state = " Joue depuis : ";
         DiscStatus.Discord_UpdatePresence(status);
     }
-
     public static void SuperMarioMaker2(String arg1) {
         DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
         String IdApp= "856176324480466984";
@@ -124,8 +119,69 @@ public class games {
         status.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
         status.state = " Joue depuis : ";
         DiscStatus.Discord_UpdatePresence(status);
-
-
     }
-
+    public static void TheLegendOfZeldaBreathOfTheWild(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "856199183723528203";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "thelegendofzeldabreathofthewild";
+        status.largeImageText = "The Legend of Zelda: Breath of the Wild";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void TheLegendOfZeldaLinksAwakening(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "856199591325597746";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "thelegendofzeldalinksawakening";
+        status.largeImageText = "The Legend of Zelda: Link's Awakening";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void TheLegendOfZeldaSkywardSwordHD(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "856199734574055474";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "thelegendofzeldaskywardswordhd";
+        status.largeImageText = "The Legend of Zelda: Skyward Sword HD";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void HyruleWarriorsLEreduFleau(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "856200791463165983";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "hyrulewarriorsleredufleau";
+        status.largeImageText = "Hyrule Warriors: L'Ère du Fléau";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
 }

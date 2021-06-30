@@ -6,7 +6,6 @@ import fr.theshark34.swinger.event.SwingerEventListener;
 import fr.theshark34.swinger.textured.STexturedButton;
 import javax.swing.*;
 import java.awt.*;
-import fr.tyrolium.maxime.discord.games;
 import static fr.theshark34.swinger.Swinger.drawFullsizedImage;
 
 public class panel extends JPanel implements SwingerEventListener {
@@ -23,6 +22,10 @@ public class panel extends JPanel implements SwingerEventListener {
     public STexturedButton SuperMarioMaker2 = new STexturedButton(Swinger.getResource("game/SuperMarioMaker2.png"));
     public STexturedButton NewSuperMarioBrosUDeluxe = new STexturedButton(Swinger.getResource("game/NewSuperMarioBrosUDeluxe.png"));
     public STexturedButton MarioKart8Deluxe = new STexturedButton(Swinger.getResource("game/MarioKart8Deluxe.png"));
+    public STexturedButton TheLegendOfZeldaBreathOfTheWild = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaBreathOfTheWild.png"));
+    public STexturedButton TheLegendOfZeldaLinksAwakening = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaLinksAwakening.png"));
+    public STexturedButton TheLegendOfZeldaSkywardSwordHD = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaSkywardSwordHD.png"));
+    public STexturedButton HyruleWarriorsLEreduFleau = new STexturedButton(Swinger.getResource("game/HyruleWarriorsLEreduFleau.png"));
 
     public panel() {
         this.setLayout(null);
@@ -68,6 +71,22 @@ public class panel extends JPanel implements SwingerEventListener {
         MarioKart8Deluxe.addEventListener(this);
         this.add(MarioKart8Deluxe);
 
+        TheLegendOfZeldaBreathOfTheWild.setBounds(748, 75, 100, 100);
+        TheLegendOfZeldaBreathOfTheWild.addEventListener(this);
+        this.add(TheLegendOfZeldaBreathOfTheWild);
+
+        TheLegendOfZeldaLinksAwakening.setBounds(854, 75, 100, 100);
+        TheLegendOfZeldaLinksAwakening.addEventListener(this);
+        this.add(TheLegendOfZeldaLinksAwakening);
+
+        TheLegendOfZeldaSkywardSwordHD.setBounds(6, 181, 100, 100);
+        TheLegendOfZeldaSkywardSwordHD.addEventListener(this);
+        this.add(TheLegendOfZeldaSkywardSwordHD);
+
+        HyruleWarriorsLEreduFleau.setBounds(112, 181, 100, 100);
+        HyruleWarriorsLEreduFleau.addEventListener(this);
+        this.add(HyruleWarriorsLEreduFleau);
+
     }
 
     @Override
@@ -106,6 +125,18 @@ public class panel extends JPanel implements SwingerEventListener {
         }
         if (e.getSource() == MarioKart8Deluxe){
             games.MarioKart8Deluxe(username);
+        }
+        if (e.getSource() == TheLegendOfZeldaBreathOfTheWild){
+            games.TheLegendOfZeldaBreathOfTheWild(username);
+        }
+        if (e.getSource() == TheLegendOfZeldaLinksAwakening){
+            games.TheLegendOfZeldaLinksAwakening(username);
+        }
+        if (e.getSource() == TheLegendOfZeldaSkywardSwordHD){
+            games.TheLegendOfZeldaSkywardSwordHD(username);
+        }
+        if (e.getSource() == HyruleWarriorsLEreduFleau){
+            games.HyruleWarriorsLEreduFleau(username);
         }
     }
 
