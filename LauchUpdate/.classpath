@@ -6,5 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Tyrolium/Workspace/launcher/Ficher/LauncherUpdate/openlauncherlib-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/Tyrolium/Workspace/launcher/Ficher/LauncherUpdate/s-update-3.1.0-BETA.jar"/>
+	<classpathentry kind="lib" path="D:/Tyrolium/Workspace/launcher/Ficher/LauncherUpdate/swinger-1.0.0-BETA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

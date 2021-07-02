@@ -21,11 +21,11 @@ public class main {
     private static SColoredBar bar;
     private static Thread barThread;
 
-    private static final LauncherInfos TY_B_INFOS = new LauncherInfos("Tyrolium", "fr.tyrolium.maxime.launcher.LauncherFrame");
+    private static final LauncherInfos TY_B_INFOS = new LauncherInfos("TyroDiscordRCPSwitch", "fr.tyrolium.maxime.discord.main");
     private static final File TY_DIR = GameDir.createGameDir("TyroDiscordRCPSwitch");
-    private static final LauncherClasspath TY_B_CP = new LauncherClasspath(new File(TY_DIR, "Launcher/launcher.jar"), new File(TY_DIR, "Launcher/Libs/"));
+    private static final LauncherClasspath TY_B_CP = new LauncherClasspath(new File(TY_DIR, "Files/TyroDiscordRCPSwitch.jar"), new File(TY_DIR, "Files/Libs/"));
 
-    private static ErrorUtil errorUtil = new ErrorUtil(new File(TY_DIR, ("Launcher/crashes")));
+    private static ErrorUtil errorUtil = new ErrorUtil(new File(TY_DIR, ("Files/crashes")));
 
     public static void main(String[] args) {
 
@@ -60,7 +60,7 @@ public class main {
 
     private static void doUpdate() throws Exception{
 
-        SUpdate su = new SUpdate("http://tyrolium.fr/s-update-launch", new File(TY_DIR, "Launcher"));
+        SUpdate su = new SUpdate("https://tyrolium.fr/s-update-discord", new File(TY_DIR, "Files"));
 
         barThread = new Thread() {
             @Override
