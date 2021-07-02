@@ -5,7 +5,7 @@ bin-release/
 private/
 [Oo]bj/
 [Bb]in/
-TyroDiscordRCPSwitch/.idea/
+**/.idea/
 
 # Other files and folders
 .settings/
