@@ -13,7 +13,7 @@ public class main extends JFrame {
         Swinger.setSystemLookNFeel();
         Swinger.setResourcePath("/fr/tyrolium/maxime/discord/assets/");
         instance = new main();
-        System.out.println("test");
+        System.out.println("start");
     }
 
 
