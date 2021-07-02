@@ -26,6 +26,7 @@ public class panel extends JPanel implements SwingerEventListener {
     public STexturedButton TheLegendOfZeldaLinksAwakening = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaLinksAwakening.png"));
     public STexturedButton TheLegendOfZeldaSkywardSwordHD = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaSkywardSwordHD.png"));
     public STexturedButton HyruleWarriorsLEreduFleau = new STexturedButton(Swinger.getResource("game/HyruleWarriorsLEreduFleau.png"));
+    public STexturedButton DokiDokiLiteratureClubPlus = new STexturedButton(Swinger.getResource("game/DokiDokiLiteratureClubPlus.png"));
 
     public panel() {
         this.setLayout(null);
@@ -87,6 +88,10 @@ public class panel extends JPanel implements SwingerEventListener {
         HyruleWarriorsLEreduFleau.addEventListener(this);
         this.add(HyruleWarriorsLEreduFleau);
 
+        DokiDokiLiteratureClubPlus.setBounds(218, 181, 100, 100);
+        DokiDokiLiteratureClubPlus.addEventListener(this);
+        this.add(DokiDokiLiteratureClubPlus);
+
     }
 
     @Override
@@ -137,6 +142,9 @@ public class panel extends JPanel implements SwingerEventListener {
         }
         if (e.getSource() == HyruleWarriorsLEreduFleau){
             games.HyruleWarriorsLEreduFleau(username);
+        }
+        if (e.getSource() == DokiDokiLiteratureClubPlus){
+            games.DokiDokiLiteratureClubPlus(username);
         }
     }
 

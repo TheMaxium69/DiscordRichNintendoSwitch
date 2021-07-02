@@ -184,4 +184,18 @@ public class games {
         status.state = " Joue depuis : ";
         DiscStatus.Discord_UpdatePresence(status);
     }
+    public static void DokiDokiLiteratureClubPlus(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860636730570178560";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "dokidokiliteratureclubplus";
+        status.largeImageText = "Doki Doki Literature Club Plus!";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
 }
