@@ -230,4 +230,52 @@ public class games {
         status.state = " Joue depuis : ";
         DiscStatus.Discord_UpdatePresence(status);
     }
+    public static void PokemonLetsGoPikachu(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860647550557225002";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "pokemonletsgopikchu";
+        status.largeImageText = "Pokémon : Let's Go, Pikachu";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void PokemonLetsGoEvoli(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860647715750674452";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "pokemonletsgoevoli";
+        status.largeImageText = "Pokémon : Let's Go, Évoli";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void PokkenTournamentDX(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860649717721464833";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "pokkentournamentdx";
+        status.largeImageText = "Pokkén Tournament DX";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
 }

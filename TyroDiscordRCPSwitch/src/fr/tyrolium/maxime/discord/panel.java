@@ -29,6 +29,9 @@ public class panel extends JPanel implements SwingerEventListener {
     public STexturedButton DokiDokiLiteratureClubPlus = new STexturedButton(Swinger.getResource("game/DokiDokiLiteratureClubPlus.png"));
     public STexturedButton PokemonEpee = new STexturedButton(Swinger.getResource("game/PokemonEpee.png"));
     public STexturedButton PokemonBouclier = new STexturedButton(Swinger.getResource("game/PokemonBouclier.png"));
+    public STexturedButton PokemonLetsGoPikachu = new STexturedButton(Swinger.getResource("game/PokemonLetsGoPikachu.png"));
+    public STexturedButton PokemonLetsGoEvoli = new STexturedButton(Swinger.getResource("game/PokemonLetsGoEvoli.png"));
+    public STexturedButton PokkenTournamentDX = new STexturedButton(Swinger.getResource("game/PokkenTournamentDX.png"));
 
     public panel() {
         this.setLayout(null);
@@ -102,6 +105,18 @@ public class panel extends JPanel implements SwingerEventListener {
         PokemonBouclier.addEventListener(this);
         this.add(PokemonBouclier);
 
+        PokemonLetsGoPikachu.setBounds(536, 181, 100, 100);
+        PokemonLetsGoPikachu.addEventListener(this);
+        this.add(PokemonLetsGoPikachu);
+
+        PokemonLetsGoEvoli.setBounds(642, 181, 100, 100);
+        PokemonLetsGoEvoli.addEventListener(this);
+        this.add(PokemonLetsGoEvoli);
+
+        PokkenTournamentDX.setBounds(748, 181, 100, 100);
+        PokkenTournamentDX.addEventListener(this);
+        this.add(PokkenTournamentDX);
+
     }
 
     @Override
@@ -159,9 +174,17 @@ public class panel extends JPanel implements SwingerEventListener {
         if (e.getSource() == PokemonEpee){
             games.PokemonEpee(username);
         }
-
         if (e.getSource() == PokemonBouclier){
             games.PokemonBouclier(username);
+        }
+        if (e.getSource() == PokemonLetsGoPikachu){
+            games.PokemonLetsGoPikachu(username);
+        }
+        if (e.getSource() == PokemonLetsGoEvoli){
+            games.PokemonLetsGoEvoli(username);
+        }
+        if (e.getSource() == PokkenTournamentDX){
+            games.PokkenTournamentDX(username);
         }
     }
 
