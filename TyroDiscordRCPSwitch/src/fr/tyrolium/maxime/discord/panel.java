@@ -27,6 +27,8 @@ public class panel extends JPanel implements SwingerEventListener {
     public STexturedButton TheLegendOfZeldaSkywardSwordHD = new STexturedButton(Swinger.getResource("game/TheLegendOfZeldaSkywardSwordHD.png"));
     public STexturedButton HyruleWarriorsLEreduFleau = new STexturedButton(Swinger.getResource("game/HyruleWarriorsLEreduFleau.png"));
     public STexturedButton DokiDokiLiteratureClubPlus = new STexturedButton(Swinger.getResource("game/DokiDokiLiteratureClubPlus.png"));
+    public STexturedButton PokemonEpee = new STexturedButton(Swinger.getResource("game/PokemonEpee.png"));
+    public STexturedButton PokemonBouclier = new STexturedButton(Swinger.getResource("game/PokemonBouclier.png"));
 
     public panel() {
         this.setLayout(null);
@@ -92,6 +94,14 @@ public class panel extends JPanel implements SwingerEventListener {
         DokiDokiLiteratureClubPlus.addEventListener(this);
         this.add(DokiDokiLiteratureClubPlus);
 
+        PokemonEpee.setBounds(324, 181, 100, 100);
+        PokemonEpee.addEventListener(this);
+        this.add(PokemonEpee);
+
+        PokemonBouclier.setBounds(430, 181, 100, 100);
+        PokemonBouclier.addEventListener(this);
+        this.add(PokemonBouclier);
+
     }
 
     @Override
@@ -145,6 +155,13 @@ public class panel extends JPanel implements SwingerEventListener {
         }
         if (e.getSource() == DokiDokiLiteratureClubPlus){
             games.DokiDokiLiteratureClubPlus(username);
+        }
+        if (e.getSource() == PokemonEpee){
+            games.PokemonEpee(username);
+        }
+
+        if (e.getSource() == PokemonBouclier){
+            games.PokemonBouclier(username);
         }
     }
 

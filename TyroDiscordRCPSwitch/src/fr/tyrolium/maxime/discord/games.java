@@ -198,4 +198,36 @@ public class games {
         status.state = " Joue depuis : ";
         DiscStatus.Discord_UpdatePresence(status);
     }
+    public static void PokemonEpee(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860642233920913458";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "pokemonepee";
+        status.largeImageText = "Pokémon Épée";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
+    public static void PokemonBouclier(String arg1) {
+        DiscordRPC DiscStatus = DiscordRPC.INSTANCE;
+        String IdApp= "860642441869393951";
+        String IdSteam = "";
+        DiscordEventHandlers DiscHandler = new DiscordEventHandlers();
+        DiscStatus.Discord_Initialize( IdApp, DiscHandler, true, IdSteam);
+        DiscordRichPresence status = new DiscordRichPresence();
+        status.startTimestamp = System.currentTimeMillis() / 1000;
+        status.largeImageKey = "pokemonbouclier";
+        status.largeImageText = "Pokémon Bouclier";
+        status.smallImageKey = "nintendoswitch";
+        status.smallImageText = "Nintendo Switch";
+        status.details = arg1;
+        status.state = " Joue depuis : ";
+        DiscStatus.Discord_UpdatePresence(status);
+    }
 }
